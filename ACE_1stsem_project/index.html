@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <head>
+    <meta charset="UTF-8" / />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" / />
+    <link rel="stylesheet" href="style.css" / />
     <link rel="stylesheet" href="font-icon.css" />
 
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Gotu&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
       @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
     </style>
+  </head>
+  <body class="h-[100vh] w-[100vw] text-center ">
+    <div
+      class="header container border-b border-slate-400 bg-blue/30 absolute w-[100%] z-20"
+    >
+      <div
+        class="navbar w-[90vw] md:w-[80vw] h-[14vh] mx-auto  flex items-center justify-between md:p-4 md:p-x-10"
+      >
+        <div class="logo md:p-4">
+          <img
+            src="/ACE_1stsem_project/Images/logo-white.png"
+            class="h-6 md:h-10"
+            alt=""
+          />
+        </div>
+        <div class="menu hidden md:block text-white flex gap-8 p-4">
+          <a
+            href="#"
+            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-2"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-2"
+            >Their Story</a
+          >
+          <a
+            href="#"
+            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-2"
+            >Their Wedding</a
+          >
+          <a
+            href="#"
+            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-2"
+            >Gallery</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="main relative container text-white h-auto bg-fixed bg-center bg-cover bg-no-repeat z-10"
+      style="background-image: url(/ACE_1stsem_project/Images/heropage.jpg)";
+    >
+      <div class="table">
+        <div class="table-cell h-[100vh] w-[100vw] align-middle">
+          <div class="content">
+            
+            <h5 class="date text-lg md:text-2xl  leading-loose">29 Februray 2025</h5>
+            <h3 class="pre-title text-3xl md:text-5xl leading-loose">Save the date</h3>
+            <p class="name text-5xl md:text-8xl">JENNY & MARK</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
   </head>
   <body class="text-center">
     
