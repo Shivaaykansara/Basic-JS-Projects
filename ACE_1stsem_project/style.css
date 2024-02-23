@@ -7,7 +7,15 @@ body{
   font-style: normal;
 }
 
-<<<<<<< HEAD
+
+.main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+}
 .header ,.p{
     font-family: "Playball",cursive;
 }
@@ -23,6 +31,8 @@ body{
     height: 1px;
     width: 60px;
     right: 0;
+    z-index: -1;
+    background: rgba(0,0,0,.3);
     top: 50%;
     background-color: #aaa;
     position: absolute;
@@ -49,31 +59,14 @@ body{
     left: 50%;
 }
 
-.content{
-    
-}
-
 .content::after{
     content: '';
     z-index: -1;
     background-color: cornflowerblue;
     opacity: .5;
-=======
-
-.main::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background: rgba(0,0,0,.3);
 }
-
 .name{
     font-family: "Amita", serif;
   font-weight: 700;
   font-style: normal;
->>>>>>> da80da2c9b4787ae2eaa0e99792854451737d1f1
 }
