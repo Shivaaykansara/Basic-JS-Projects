@@ -7,12 +7,54 @@ body{
     font-family: 'bitter',serif;
 }
 
-.header{
-    position: absolute;
+.header ,.p{
     font-family: "Playball",cursive;
-    left: 0;
+}
+
+.title{
+  font-weight: 400;
+  font-size: 3em;
+  font-style: normal;
+        }
+
+.frame::before{
+    content: '';
+    height: 1px;
+    width: 60px;
     right: 0;
-    top: 20px;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,.2);
+    top: 50%;
+    background-color: #aaa;
+    position: absolute;
+}
+.frame::after{
+    content: '';
+    left: 0;
+    top: 50%;
+    height: 1px;
+    width: 60px;
+    background-color: #aaa;
+    position: absolute;
+}
+
+.icon{
+    font-size: 18px;
+    color: #e45f74;
+}
+
+.icon::before{
+    margin: -9px 0 0 -9px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+.content{
+    
+}
+
+.content::after{
+    content: '';
+    z-index: -1;
+    background-color: cornflowerblue;
+    opacity: .5;
 }
