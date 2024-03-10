@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+body{  
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+=======
 body {
   font-size: 16px;
   font-family: "Bitter", serif;
@@ -6,6 +12,7 @@ body {
   margin: 0;
   font-weight: 400;
   color: #333;
+>>>>>>> Shiva-primary
 }
 
 .p,
@@ -161,6 +168,12 @@ h3 {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+.content::after{
+    content: '';
+    z-index: -1;
+}
+=======
 .btn:after {
   content: "";
   position: absolute;
@@ -193,3 +206,4 @@ h3 {
   transform: translateX(0%);
   background: #e45f74;
 }
+>>>>>>> Shiva-primary
