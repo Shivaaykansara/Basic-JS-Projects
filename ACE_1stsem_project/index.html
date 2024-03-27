@@ -8,13 +8,14 @@
 
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
     </style>
   </head>
   <body class="text-center">
-    <div class="header container">
+    <div class="header  ">
       <div
         class="navbar h-auto px-[15px] lg:mx-[32px] xl:mx-[150px] flex items-center lg:justify-between"
       >
@@ -25,43 +26,70 @@
             alt=""
           />
         </div>
-        <div class="menu hidden md:block text-white mx-[10px] flex">
-          <a
-            href="#"
-            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
-            >HOME</a
-          >
-          <a
-            href="#"
-            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4 px-8"
-            >OUR STORIES
-            <i class="icon icon-caret-down absolute color-white mt-0"> </i>
-          </a>
-          <a
-            href="#"
-            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
-            >THEIR WEDDING</a
-          >
-          <a
-            href="#"
-            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
-            >GALLERY</a
-          >
-          <a
-            href="#"
-            class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
-            >RSVP</a
-          >
+        <div class="menu hidden md:block text-white mx-[10px]">
+          <ul class="flex">
+            <li>
+              <a
+                href="#"
+                class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
+                >HOME</a
+              >
+            </li>
+            <li class="relative text-left dropbtn" onclick="myFunc()"> 
+              <a
+                href="#"
+                class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
+              
+                >OUR STORIES
+                <i class="icon-caret-down absolute mt-0"> </i>
+              </a>
+              <ul id="myDrop" class="drop-down-menu">
+                <li><a href="#"class="block px-[20px] py-[15px] ">FEATURED</a></li>
+                <li class="border-t block"><a href="#"class="block px-[20px] py-[15px] ">ABOUT</a></li>
+                <li class="drop-down dropbtn border-t block" onclick="myFunction()" >
+                  <a href="#!" class="block px-[20px] py-[15px] "
+                    >CATEGORIES<i class=" icon-caret-right"></i
+                  ></a>
+                  <ul id="myDropdown" class="drop-down-menu drop-down-inner">
+                    <li class="border-t block"><a href="#" class="block px-[20px] py-[15px]">FEATURED</a></li>
+                    <li class="border-t block"><a href="#" class="block px-[20px] py-[15px]">ABOUT</a></li>
+                    <li class="border-t block"><a href="#" class="block px-[20px] py-[15px]">CATEGORIES</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
+                >THEIR WEDDING</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
+                >GALLERY</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="border-2 hover:backdrop-blur-sm hover:text-[#E45F74] border-transparent hover:border-rose-500 hover:border-2 p-4"
+                >RSVP</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </div>
     <div
-      class="main relative container text-white h-[100vh] bg-cover z-10 bg-no-repeat"
+      class="main relative text-white h-[100vh]  bg-cover z-10 bg-no-repeat"
       style="background-image: url(/ACE_1stsem_project/Images/heropage.jpg)"
       ;
     >
       <div class="table">
-        <div class="table-cell h-[100vh] w-[100vw] align-middle">
+        <div class="table-cell h-screen w-screen align-middle">
           <div class="content">
             <i class="small-icon icon icon-tie color-white text-4xl"></i>
             <h5 class="date text-lg md:text-xl mt-[10px] leading-loose">
@@ -79,7 +107,7 @@
       </div>
     </div>
     <div
-      class="section story container h-auto pt-[50px] bg-no-repeat pb-[20px] md:pt-[100px] md:pb-[70px]"
+      class="section story   h-auto pt-[50px] bg-no-repeat pb-[20px] md:pt-[100px] md:pb-[70px]"
       style="
         background-image: url(/ACE_1stsem_project/Images/Background_Circle.png);
       "
@@ -102,7 +130,7 @@
       </div>
     </div>
     <div
-      class="section timer text-white container bg-cover bg-no-repeat z-[1] relative h-auto pt-[50px] pb-[20px] md:pt-[100px] md:pb-[70px]"
+      class="section timer text-white   bg-cover bg-no-repeat z-[1] relative h-auto pt-[50px] pb-[20px] md:pt-[100px] md:pb-[70px]"
       style="
         background-image: url(/ACE_1stsem_project/Images/counter-1-1600x600.jpg);
       "
@@ -120,28 +148,40 @@
           <div
             class="time-sec rounded-full mx-[20px] mb-[30px] relative pt-[25px] border-[1px] h-[120px] w-[120px] inline-block"
           >
-            <span class="t_title text-[3em] leading-[1] block">00</span> days
+            <span class="t_title text-[3em] leading-[1] block" id="days"
+              >00</span
+            >
+            days
           </div>
           <div
             class="time-sec rounded-full mx-[20px] mb-[30px] relative pt-[25px] border-[1px] h-[120px] w-[120px] inline-block"
           >
-            <span class="t_title text-[3em] leading-[1] block">00</span> hours
+            <span class="t_title text-[3em] leading-[1] block" id="hours"
+              >00</span
+            >
+            hours
           </div>
           <div
             class="time-sec rounded-full mx-[20px] mb-[30px] relative pt-[25px] border-[1px] h-[120px] w-[120px] inline-block"
           >
-            <span class="t_title text-[3em] leading-[1] block">00</span> minutes
+            <span class="t_title text-[3em] leading-[1] block" id="minutes"
+              >00</span
+            >
+            minutes
           </div>
           <div
             class="time-sec rounded-full mx-[20px] mb-[30px] relative pt-[25px] border-[1px] h-[120px] w-[120px] inline-block"
           >
-            <span class="t_title text-[3em] leading-[1] block">00</span> seconds
+            <span class="t_title text-[3em] leading-[1] block" id="seconds"
+              >00</span
+            >
+            seconds
           </div>
         </div>
       </div>
     </div>
     <div
-      class="section wed-cerm container h-auto pt-[50px] bg-no-repeat pb-[20px] md:pt-[100px] md:pb-[70px]"
+      class="section wed-cerm   h-auto pt-[50px] bg-no-repeat pb-[20px] md:pt-[100px] md:pb-[70px]"
       style="
         background-image: url(/ACE_1stsem_project/Images/Background_Circle.png);
       "
@@ -198,7 +238,7 @@
       </div>
     </div>
     <div
-      class="section ceremony-sec text-white container bg-cover bg-no-repeat z-[1] relative h-auto pt-[50px] pb-[20px] md:pt-[100px] md:pb-[70px]"
+      class="section ceremony-sec text-white   bg-cover bg-no-repeat z-[1] relative h-auto pt-[50px] pb-[20px] md:pt-[100px] md:pb-[70px]"
       style="
         background-image: url(/ACE_1stsem_project/Images/counter-1-1600x600.jpg);
       "
@@ -210,7 +250,7 @@
             <i class="icon icon-star absolute color-white"> </i>
           </span>
         </div>
-        <div class="container">
+        <div class=" ">
           <div class="ceremony w-[74vw] mx-auto mb-[30px]">
             <p class="desc mb-[15px]">
               We assist our clients in creating memorable, magical celebrations
@@ -225,7 +265,7 @@
       </div>
     </div>
     <div
-      class="section gallery container h-auto pt-[50px] bg-no-repeat pb-[20px] md:pt-[100px] md:pb-[70px]"
+      class="section gallery   h-auto pt-[50px] bg-no-repeat pb-[20px] md:pt-[100px] md:pb-[70px]"
       style="
         background-image: url(/ACE_1stsem_project/Images/Background_Circle.png);
       "
@@ -303,7 +343,7 @@
           </div>
         </div>
         <a
-          class="inline-block my-[40px] border border-[#E45F74] px-[10px] py-[10px] md:px-[30px] md:py-[15px]"
+          class="inline-block my-[40px] hover:bg-[#E45F74] hover:text-white border border-[#E45F74] px-[10px] py-[10px] md:px-[30px] md:py-[15px]"
           href="#"
           >VIEW ALL GALLERY</a
         >
@@ -313,7 +353,7 @@
       <div
         class="contact-wrapper section float-none md:float-left w-[100%] md:w-[50%]"
       >
-        <div class="container w-[98%] md:w-[80%] mx-auto text-left">
+        <div class="  w-[98%] md:w-[80%] mx-auto text-left">
           <div class="heading pb-[40px]">
             <h3 class="title">Contact Us</h3>
             <i class="icon icon-star"></i>
@@ -340,7 +380,7 @@
       </div>
     </div>
     <footer class="relative z-10 pt-[70px]">
-      <div class="container w-[80vw] mx-auto text-[#555]">
+      <div class="  w-[80vw] mx-auto text-[#555]">
         <div class="foot_head flex flex-col justify-center items-center">
           <div class="logo block h-[50px]">
             <img
@@ -368,10 +408,10 @@
               placeholder="Your Email"
             />
             <button
-              class="submit-btn absolute right-0 h-[55px] w-[55px] leading-[55px] rounded-[100px] bg-[#E45F74] text-[#fff]"
+              class="submit-btn absolute right-0 h-[55px] w-[55px] leading-[55px] rounded-[100px] bg-[#E45F74] text-[#fff] hover:text-[#E45F74] hover:bg-white hover:border hover:border-[#E45F74]"
               type="submit"
             >
-              <i class="icon-email-plane"></i>
+              <i class="icon-email-plane  " ></i>
             </button>
           </form>
         </div>
@@ -414,7 +454,7 @@
             ></a>
           </li>
         </ul>
-        <ul class="footer-links flex justify-center">
+        <ul class="footer-links flex justify-center flex-wrap">
           <li>
             <a href="#" class="px-[15px] py-[10px] hover:text-[#E45F74]"
               >HOME</a
@@ -442,9 +482,15 @@
           </li>
         </ul>
         <p class="copyright pt-[20px] pb-[30px]">
-          Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by Shiva</a>
-          </p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | This template is made with
+          <i class="icon-heart" aria-hidden="true"></i> by Shiva
+        </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
