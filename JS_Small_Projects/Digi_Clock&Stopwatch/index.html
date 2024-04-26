@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .hr,
+        .min,
+        .sec,
+        .ampm {
+          @apply bg-black md:text-5xl text-white p-4 rounded-lg;
+        }
+
+        .minutes,
+        .seconds,
+        .milliseconds {
+          @apply bg-black md:text-3xl text-white p-4 rounded-full;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-blue-400 h-screen flex items-center">
+      <div class="container md:h-[30vh] md:flex justify-center">
+        <div
+          class="clock p-4 md:w-1/3 bg-red-400 grid grid-col content-center text-center"
+        >
+          <h2 class="text-2xl font-bold pb-4">Current Time</h2>
+          <div class="flex gap-6 justify-center">
+            <div class="hr">21</div>
+            <div class="min">12</div>
+            <div class="sec">12</div>
+            <div class="ampm">AM</div>
+          </div>
+        </div>
+        <div
+          class="stopwatch md:w-1/3 bg-green-400 grid grid-col content-center text-center"
+        >
+          <h2 class="text-2xl font-bold p-4">Stop Watch</h2>
+          <div class="flex gap-6 justify-center">
+            <div class="minutes">00</div>
+            <div class="seconds">00</div>
+            <div class="milliseconds">00</div>
+          </div>
+<div class="flex justify-center gap-8 p-4">
+          <img src="img/play.png" alt="" class="start h-6 ">
+          <img src="img/stop-button.png" alt="" class="stop h-6 ">
+          <img src="img/undo.png" alt="" class="reset h-6 ">
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
