@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getProduct";
+import { showToast } from "./showToast";
 import { updateCartValue } from "./updateCartValue";
 
 
@@ -9,8 +10,8 @@ export const addToCart = (event,id,stock)=>{
     let arrLocalStorageProduct = getCartProductFromLS();
 
     const cartElement = document.querySelector(`#card${id}`);
-    let quantity = cartElement.querySelector('.productquantity').innerText;
-    let price = cartElement.querySelector('.productprice').innerText;
+    let quantity = cartElement.querySelector('.productQuantity').innerText;
+    let price = cartElement.querySelector('.productPrice').innerText;
 
     price = price.replace('₹','');
 
@@ -27,7 +28,9 @@ export const addToCart = (event,id,stock)=>{
             return currProd.id === id?updatedCart:currProd;
         });
 
-        localStorage.setItem('cartProductsLS',JSON.stringify(updatedCart));
+        localStorage.setItem('cartProductLS',JSON.stringify(updatedCart));
+
+        showToast("add", id);
 
     }
 
@@ -40,7 +43,9 @@ export const addToCart = (event,id,stock)=>{
     quantity = Number(quantity);
     
     arrLocalStorageProduct.push({id,price,quantity})
-    localStorage.setItem('cartProductsLS',JSON.stringify(arrLocalStorageProduct));
+    localStorage.setItem('cartProductLS',JSON.stringify(arrLocalStorageProduct));
 
     updateCartValue(arrLocalStorageProduct)
+
+    showToast("add", id);
 }
