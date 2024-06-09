@@ -1,0 +1,79 @@
+body{
+    background-color: cornflowerblue;
+    
+}
+
+.container{
+    height: fit-content;
+    width:fit-content;
+    margin: 150px auto 0 auto;
+    background-color:lavenderblush;
+    border: 5px solid tomato;
+    border-radius: 30px;
+    padding: 50px;
+    
+}
+
+.btn,.opr,.equal,.clear{
+    border: 2px solid black;
+    border-radius: 30%;
+    font-size: larger;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    background-color: tomato;
+}
+
+#display{
+    margin: 10px;
+    height: 5vh;
+    width: 50vh;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.hisBtn{
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: larger;
+    padding: 10px;
+}
+
+input{
+    font-size: 2rem;
+    padding:10px;
+}
+
+textarea{
+    resize: none;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+}
+
+.num,.oper{
+    display: flex;
+
+    flex-direction: row;
+}
+
+#history{
+    background-color: white;
+    width: auto;
+    height: 20vh;
+    overflow-y: scroll;
+    tab-size: 4;
+}
+
+.space{
+    font-size: 2rem;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.none{
+    display: none;
+}

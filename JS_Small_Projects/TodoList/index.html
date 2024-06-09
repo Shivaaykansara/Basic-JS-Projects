@@ -44,9 +44,9 @@
         updateTodoValue = todoValuelocal.filter(
           (currTodoValue)=> currTodoValue !== recentTodo.textContent  
         );
-
-        addtodoLocal(updateTodoValue);
         recentTodo.remove();
+        addtodoLocal(updateTodoValue);
+        
       }
 
       const addTodoList = (e) => {
